@@ -1,0 +1,11 @@
+   type aremos_model
+      integer :: size
+      integer, dimension(MAX_MODEL_SIZE) :: eqnNum
+      character (len = 15), dimension(MAX_MODEL_SIZE) :: eqnName
+      character (len = 15), dimension(MAX_MODEL_SIZE) :: eqnType
+   end type aremos_model
+   
+   type aremos_equation
+      integer :: length
+      character (len = MAX_EQUATION_SIZE) :: eqnText
+   end type aremos_equation

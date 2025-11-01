@@ -1,0 +1,19 @@
+   ! Frequency enumeration
+   integer, parameter :: NULL = 0
+   integer, parameter :: ANNUAL = 100       ! also Z"0064"
+   integer, parameter :: QUARTERLY = 200    ! also Z"00C8"
+   integer, parameter :: MONTHLY = 300      ! also Z"012C"
+   
+   ! Object specific parameters
+   integer, parameter :: MAX_MODEL_SIZE = 10000
+   integer, parameter :: MAX_EQUATION_SIZE = 1000
+   integer, parameter :: MAX_LIST_SIZE = 2000
+   integer, parameter :: LIST_ITEM_LEN = 256
+
+   ! Series dimensions
+   integer, parameter :: MAX_YEAR = 2110
+   integer, parameter :: MAX_YR = 210     ! (MAX_YEAR - 1900)
+   integer, parameter :: MAX_QTR = 843    !  4 * MAX_YR + 3
+   integer, parameter :: MAX_MTH = 2531   ! 12 * MAX_YR + 11   
+   
+   
